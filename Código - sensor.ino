@@ -20,3 +20,10 @@ void loop()
   digitalWrite(trig, LOW);
   
   micro = pulseIn(echo, HIGH);
+
+  cm = micro / 58;
+  
+  Serial.println(cm);
+ 
+  delay(100);
+}
