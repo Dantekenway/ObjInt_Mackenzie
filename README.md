@@ -26,5 +26,8 @@ O sensor utilizado foi o HCSR04 que é conectado ao microcontrolador ESP32, que 
 ![WhatsApp Image 2024-11-18 at 7 42 08 PM](https://github.com/user-attachments/assets/b15e495c-731d-48e3-a4ca-2828edd62ab9)
 
 
+a
+
+
 
 
