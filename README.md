@@ -66,6 +66,10 @@ Após isso, a mensagem deve ser enviada no tópico MQTT do Broker criado (via wi
 
 ![Imagem2](https://github.com/user-attachments/assets/f5043937-0e24-465e-86c1-be19169d0f44)
 
+#Apresentação Prática: 
+
+Link do Youtube: https://www.youtube.com/watch?v=6zCu0g_MhWU
+
 
 
 
