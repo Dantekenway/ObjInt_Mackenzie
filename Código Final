@@ -16,11 +16,14 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 // Configurações do sensor
+
+const int white = 13;
 const int PINO_TRIG = 14;
 const int PINO_ECHO = 25;
 
 void setup() {
   Serial.begin(9600);
+  pinMode (white, OUTPUT);
 
   // Configuração Wi-Fi
   WiFi.begin(ssid, password);
@@ -74,6 +77,14 @@ void loop() {
 
   long duracao = pulseIn(PINO_ECHO, HIGH);
   float distancia = (duracao * 0.0343) / 2;
+
+  
+   if(distancia >= 7.5) {           
+    digitalWrite(white,HIGH);    // Liga o LED se a distância for maior que 7.5 centimetros
+  } 
+  else {
+    digitalWrite(white,LOW);     // Desliga o LED
+  }
 
   String mensagem;
   if (distancia >= 7.5) {
