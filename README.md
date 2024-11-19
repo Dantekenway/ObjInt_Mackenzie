@@ -1,4 +1,4 @@
-# Mackenzie - Objetos Inteligentes Conectados - Sensor de estoque 
+![image](https://github.com/user-attachments/assets/ccc22468-2b5c-4664-85c0-b16f0082d429)# Mackenzie - Objetos Inteligentes Conectados - Sensor de estoque 
 
 - O objetivo do projeto é o desenvolvimento de um protótipo em um controlador cm a IDE Arduino 2.3.3, que deve automatizar o controle de estoque, assegurando que todos os itens estejam disponíveis.
 
@@ -14,13 +14,16 @@ conectividade Wi-Fi integrada.
 •	Broker MQTT: Um servidor MQTT para comunicação, que pode ser configurado localmente ou usar um serviço online. Nesse caso será utilizado o Broker EMQX.
 
 •	Biblioteca PubSubClient: Para a comunicação via MQTT no controlador, Biblioteca Wifi para conexão com a rede, Biblioteca do ESP32.
+
+•	Led Branco para identificar a mudança e gerar um alerta visual quando é necessário repor o estoque.
 Para o projeto, será utilizado o app MQTT Dashboard, que é uma ferramenta para testar e monitorar dispositivos IoT que utilizam do protocolo. Dessa forma, ele possibilita a visualização e publicação dos dados enviados e interage com o modelo do controlador escolhido (ESP32) diretamente do celular.
 Para a programação, usaremos a IDE 2.3.3 do controlador juntamente com a linguagem de programação C++. Dessa forma, acessando o site oficial do mesmo, fazendo a
 instalação e configurando a ESP32 na IDE 2.3.3, podemos iniciar o processo de programação do prototipo.
 
+
 **Construção:
 
-O sensor utilizado foi o HCSR04 que é conectado ao microcontrolador ESP32, que irá processar os dados do estoque. Os cabos de alimentação do sensor são conectados às entradas de 5V e GND do ESP32, enquanto o sinal de saída do sensor é conectado ao pino digital 14 e 25 (Trigger e Echo). Este sistema é alimentado por uma fonte de 5V, adequada para a operação dos componentes eletrônicos envolvidos. Também há a possibilidade de alimentar todo o circuito através de um cabo USB direto de um computador.
+O sensor utilizado foi o HCSR04 que é conectado ao microcontrolador ESP32, que irá processar os dados do estoque. Os cabos de alimentação do sensor são conectados às entradas de 5V e GND do ESP32, enquanto o sinal de saída do sensor é conectado ao pino digital 14 e 25 (Trigger e Echo). Este sistema é alimentado por uma fonte de 5V, adequada para a operação dos componentes eletrônicos envolvidos. Também há a possibilidade de alimentar todo o circuito através de um cabo USB direto de um computador, já que a ESP32 possui entrada para tal. Também foi inserido o led e as conexões com o jumper.
 
 ![WhatsApp Image 2024-11-18 at 7 42 08 PM](https://github.com/user-attachments/assets/b15e495c-731d-48e3-a4ca-2828edd62ab9)
 
@@ -66,9 +69,18 @@ Após isso, a mensagem deve ser enviada no tópico MQTT do Broker criado (via wi
 
 ![Imagem2](https://github.com/user-attachments/assets/f5043937-0e24-465e-86c1-be19169d0f44)
 
+
+**Resultados e fotos:
+
+![image](https://github.com/user-attachments/assets/c6b0a5ee-ae52-4756-864c-25215cb5e177)
+![image](https://github.com/user-attachments/assets/cf440b28-cbe3-45bb-8b92-d9fbb868cf1d)
+![image](https://github.com/user-attachments/assets/5c84e996-c701-4291-ac92-94d3a0487cd8)
+![image](https://github.com/user-attachments/assets/2e60bbda-525a-490b-b7ac-66f02be6a441)
+
+
 #Apresentação Prática: 
 
-Link do Youtube: https://www.youtube.com/watch?v=6zCu0g_MhWU
+Link do Youtube: 
 
 
 
