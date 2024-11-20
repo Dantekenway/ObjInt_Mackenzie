@@ -81,7 +81,7 @@ Após isso, a mensagem deve ser enviada no tópico MQTT do Broker criado (via wi
 #Apresentação Prática: 
 
 Link do Youtube: 
-
+https://www.youtube.com/watch?v=Pqo7qzvN42M
 
 
 
